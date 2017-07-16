@@ -13,7 +13,7 @@ for p in PcapReader('testtcp.pcap'):
         continue
     p_time = p.time
     p = p[IP]
-    if (p.src != '111.62.242.25'):
+    if (p.src != '10.21.238.36'):
         continue
     p.src = ip_map.get(p.src, p.src)
     p.dst = ip_map.get(p.dst, p.dst)
